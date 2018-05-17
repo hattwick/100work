@@ -1,0 +1,13 @@
+Path follow-up:
+
+Installing collected packages: setuptools, virtualenv, virtualenv-clone, pipenv
+  Found existing installation: setuptools 3.3
+    Uninstalling setuptools-3.3:
+      Successfully uninstalled setuptools-3.3
+  The script virtualenv.exe is installed in 'c:\users\phil\appdata\local\programs\python\python36\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  The script virtualenv-clone.exe is installed in 'c:\users\phil\appdata\local\programs\python\python36\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  The scripts pewtwo.exe, pipenv-resolver.exe and pipenv.exe are installed in 'c:\users\phil\appdata\local\programs\python\python36\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pipenv-2018.5.18 setuptools-39.1.0 virtualenv-16.0.0 virtualenv-clone-0.3.0
