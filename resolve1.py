@@ -18,5 +18,6 @@ class Resolver:
 
 
 if __name__ == "__main__":
-   testresolve = resolve("google.com")
-    print(testresolve)
+    testresolve = Resolver()
+    testresult = testresolve("google.com")
+    print(testresult)
