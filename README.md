@@ -6,4 +6,5 @@ Applications manifest:
 
 app1hello - simple greeter
 
-app2
+app2guessnumber - user input evaluation and feedback
+
