@@ -1,5 +1,9 @@
 # 100work
-Workspace for TalkPython100Days
+Workspace for TalkPython100Days and Build 10 Apps from Talk Python Training
 
 
-Week 1 commits finished
+Applications manifest:
+
+app1hello - simple greeter
+
+app2
