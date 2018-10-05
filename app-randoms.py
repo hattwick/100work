@@ -1,5 +1,5 @@
 # This is a mix of several use cases of the random function
-
+# Tested in Python 3.7
 
 import random
 import sys
