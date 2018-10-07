@@ -8,3 +8,7 @@ app1hello - simple greeter
 
 app2guessnumber - user input evaluation and feedback
 
+app3-datesuntil - countdown
+
+app4-journal
+
