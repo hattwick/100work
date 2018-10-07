@@ -39,7 +39,7 @@ if __name__ == "__main__":
 	program_header()
 	day = get_special_day_from_user()
 	now = date.today()          #TODO fix zero value being passed
-	print(f'Today is {0}'.format(today))
+	print(f'Today is {0}'.format(now))
 	number_of_days = compute_days_between_dates(day, now)
 	print(f'Number of days: '.format(number_of_days))
 	# findings(number_of_days)
