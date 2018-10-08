@@ -9,30 +9,15 @@ import sys
 version = sys.version
 print(version)
 
+def main():
+	program_header()
+	run_event_loop()
+
 def program_header():
 	print('--------------------------------------------')
 	print('           JOURNAL MANAGER                  ')
 	print('--------------------------------------------')
 	print()
-
-def run_event_loop():
-
-	print('What are you doing today?')
-	cmd = None
-	journal_data = []    # List of journal entries
-
-	while cmd != 'x':
-		cmd = input('[L]ist entries, [A]dd entry, E[x]it: ')
-		cmd = cmd.lower().strip()
-
-	if cmd == 'l':
-		list_entries(journal_data)
-	elif cmd =='a':
-		add_entry(journal_data)
-	elif cmd != 'x':
-		print("Sorry, command '{}' is not a valid command".format(cmd))
-
-	print('Done. Goodbye.')
 
 
 def list_entries(data):
@@ -45,6 +30,26 @@ def add_entry(data):
 	data.append(text)
 
 
+def run_event_loop():
+
+	print('What are you doing today?')
+	cmd = 'EMPTY'
+	journal_data = []    # List of journal entries
+
+	while cmd != 'x' and cmd:
+		cmd = input('[L]ist entries, [A]dd entry, E[x]it: ')
+		cmd = cmd.lower().strip()
+
+		if cmd == 'l':
+			list_entries(journal_data)
+		elif cmd =='a':
+			add_entry(journal_data)
+		elif cmd != 'x':
+			print("Sorry, command '{}' is not a valid command".format(cmd))
+
+	print('Done. Goodbye.')
+
+
+
 if __name__ == "__main__":
-	program_header()
-	run_event_loop()
+	main()
