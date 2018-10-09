@@ -5,6 +5,7 @@
 
 import random
 import sys
+import journal
 
 version = sys.version
 print(version)
@@ -27,14 +28,16 @@ def list_entries(data):
 def add_entry(data):
 	print('Adding ...')
 	text = input('Type your entry, <enter> to exit')
-	data.append(text)
+	# data.append(text)
+	journal.add_entry(text)
 
 
 def run_event_loop():
 
 	print('What are you doing today?')
 	cmd = 'EMPTY'
-	journal_data = []    # List of journal entries
+	journal_name = 'default'
+	journal_data = journal.load(journal_name)    # List of journal entries
 
 	while cmd != 'x' and cmd:
 		cmd = input('[L]ist entries, [A]dd entry, E[x]it: ')
