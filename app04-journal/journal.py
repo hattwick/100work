@@ -10,36 +10,39 @@ import os
 
 
 def get_full_pathname(name):
-	filename = os.path.abspath(os.path.join('.', 'journals', name + '.jrl'))
-	return filename
+    """
+
+    :rtype: object
+    """
+    filename = os.path.abspath(os.path.join('.', 'journals', name + '.jrl'))
+    return filename
 
 
 def load(name):
-	"""
+    """
     Method to create and load new journal
     :param name: base of the journal to load
     :return: a new journal data structure with file data
     """
+data = []
+    filename = get_full_pathname(name)
 
-	data = []
-	filename = get_full_pathname(name)
+    if os.path.exists(filename):
+        with open(filename) as fin:
+            for entry in fin.readlines():
+                print("loading: " + entry.rstrip())
 
-	if os.path.exists(filename):
-		with open(filename) as fin:
-			for entry in fin.readlines():
-				print("loading: " + entry.rstrip())
-
-		return data
+        return data
 
 
 def save(name, journal_data):
-	filename = get_full_pathname(name)
-	print("saving to......... {}".format(filename))
-	# fout = open(filename, 'w')
-	with open(filename) as fout:
-		for entry in journal_data:
-			fout.write(entry + '\n')
+    filename = get_full_pathname(name)
+    print("saving to......... {}".format(filename))
+    # fout = open(filename, 'w')
+    with open(filename) as fout:
+        for entry in journal_data:
+            fout.write(entry + '\n')
 
 
 def add_entry(text, journal_data):
-	journal_data.append(text)
+    journal_data.append(text)

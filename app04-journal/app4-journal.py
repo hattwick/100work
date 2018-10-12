@@ -33,7 +33,6 @@ def add_entry(data):
 
 
 def run_event_loop():
-
 	print('What are you doing today?')
 	cmd = 'EMPTY'
 	journal_name = 'default'
