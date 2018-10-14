@@ -38,13 +38,13 @@ if os.path.exists(filename):
 
 
 def save(name, journal_data):
-	filename = os.path.abspath(os.path.join('./journals/', name+ '.jrl'))
-	print("saving to......... {}".format(filename))
+    filename = os.path.abspath(os.path.join('./journals/', name+ '.jrl'))
+    print("saving to......... {}".format(filename))
 
-	fout = open(filename, 'w')
-	# with open(filename) as fout:
-	for entry in journal_data:
-		fout.write(entry + '\n')
+    with open(filename, 'w') as fout:
+        for entry in journal_data:
+            fout.write(entry + '\n')
+	# fout.close() ... no longer needed by using with open above
 
 
 def add_entry(text, journal_data):

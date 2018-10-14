@@ -29,7 +29,7 @@ def add_entry(data):
 	print('Adding ...')
 	text = input('Type your entry, <enter> to exit')
 	# data.append(text)
-	journal.add_entry(text)
+	journal.add_entry(text, data)
 
 
 def run_event_loop():
