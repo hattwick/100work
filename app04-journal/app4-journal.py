@@ -3,8 +3,8 @@
 # Program is a journaling app.
 # Tested in Python 3.7
 
-import random
 import sys
+
 import journal
 
 version = sys.version
