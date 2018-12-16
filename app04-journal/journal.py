@@ -13,7 +13,7 @@ def get_full_pathname(name: object) -> object:
     """
     :rtype: object
     """
-    filename = os.path.abspath(os.path.join('.', 'journals', name + '.jrl'))
+    filename = os.path.abspath(os.path.join(".", "journals", name + ".jrl"))
     return filename
 
 
@@ -38,14 +38,14 @@ if os.path.exists(filename):
 
 
 def save(name, journal_data):
-    filename = os.path.abspath(os.path.join('./journals/', name+ '.jrl'))
+    filename = os.path.abspath(os.path.join("./journals/", name + ".jrl"))
     print("saving to......... {}".format(filename))
 
-    with open(filename, 'w') as fout:
+    with open(filename, "w") as fout:
         for entry in journal_data:
-            fout.write(entry + '\n')
-	# fout.close() ... no longer needed by using with open above
+            fout.write(entry + "\n")
+    # fout.close() ... no longer needed by using with open above
 
 
 def add_entry(text, journal_data):
-	journal_data.append(text)
+    journal_data.append(text)
