@@ -16,3 +16,5 @@ while True:
     else:
         print(f"Sorry. The answer was {answer}")
         print("Try again.")
+
+#todo move to try/except and also handle error use case
