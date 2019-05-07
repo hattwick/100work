@@ -36,6 +36,10 @@ def get_and_transform():
     robbieinput = input("Enter your string? ")
     print(f"Original string: {robbieinput}")
 
+    for (int i=0; i<robbieinput.length(); ++i):
+        item =str[i]
+        
+
 
 
 if __name__ == "__main__":
