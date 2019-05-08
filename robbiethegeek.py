@@ -36,9 +36,11 @@ def get_and_transform():
     robbieinput = input("Enter your string? ")
     print(f"Original string: {robbieinput}")
 
-    for (int i=0; i<robbieinput.length(); ++i):
-        item =str[i]
-        
+    for item in robbieinput:
+        tempval = item
+        counter = 1
+        print (f"{tempval}, {counter} ")
+
 
 
 
