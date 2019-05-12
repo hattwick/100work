@@ -1,6 +1,6 @@
 # Robbie posed a question.
 # A network guy is just one of the many things he is.
-# I needed time to prepare the answer
+# The question:  Given a string aaacchhhc, write a function to return 3a2c2h1c
 
 import sys
 import collections
