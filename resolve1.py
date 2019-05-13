@@ -1,5 +1,5 @@
 # Python 100 days - simple dns resolver
-# Tested in native 3.6.5.  Socket package not available in Anaconda
+# Tested in native 3.6.5 and 3.7.2.  Socket package not available in Anaconda
 
 import socket
 
