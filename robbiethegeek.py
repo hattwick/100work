@@ -3,7 +3,7 @@
 # The question:  Given a string aaacchhhc, write a function to return 3a2c2h1c
 
 import sys
-import collections
+
 
 version = sys.version
 print(version)
