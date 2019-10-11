@@ -2,6 +2,9 @@
 # Exercises 1.2.1 - Random Integer Guess
 
 import random
+import locale
+
+systemencoder = locale.getpreferredencoding(False)
 
 answer = random.randint(0, 100)
 
@@ -11,6 +14,7 @@ while True:
 
     if user_guess == answer:
         print(f"Correct! The answer is {user_guess}")
+        print(f"System encoder was {systemencoder}")
         break
 
     else:
