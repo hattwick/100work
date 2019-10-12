@@ -1,5 +1,6 @@
 # Python Workouts with Reuven
 # Exercises 1.2.1 - Random Integer Guess
+# Includes a random check of the system encoder
 
 import random
 import locale
